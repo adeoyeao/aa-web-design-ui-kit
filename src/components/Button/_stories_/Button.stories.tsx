@@ -7,6 +7,9 @@ export default {
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
+    white: { control: 'color' },
+    black: { control: 'color' },
+    accentColor: { control: 'color' },
   },
 } as Meta;
 
@@ -21,37 +24,4 @@ Primary.args = {
     black: 'black',
     size: 'default',
     label: 'Primary',
-}
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-    primary: false,
-    backgroundColor: 'blue',
-    accentColor: 'orange',
-    white: 'white',
-    black: 'black',
-    size: 'default',
-    label: 'Secondary',
-}
-
-export const Small = Template.bind({});
-Small.args = {
-    primary: true,
-    backgroundColor: 'blue',
-    accentColor: 'orange',
-    white: 'white',
-    black: 'black',
-    size: 'small',
-    label: 'Small',
-}
-
-export const Large = Template.bind({});
-Large.args = {
-    primary: true,
-    backgroundColor: 'blue',
-    accentColor: 'orange',
-    white: 'white',
-    black: 'black',
-    size: 'large',
-    label: 'Large',
 }
