@@ -19,7 +19,7 @@ export default {
    
   export const Primary = Template.bind({});
   Primary.args = {
-    backgroundColor: 'pink',
+    backgroundColor: 'white',
     accentColor: 'blue',
     paddingSide: 10,
     align: 'middle',
@@ -29,8 +29,8 @@ export default {
       { name: 'projects', route: 'projects', onClick: handleClick},
       { name: 'contact', route: 'contact', onClick: handleClick},
     ],
-    logo: 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg',
-    menu: 'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/cat_relaxing_on_patio_other/1800x1200_cat_relaxing_on_patio_other.jpg',
+    logo: 'https://1000logos.net/wp-content/uploads/2017/02/ig-logo.png',
+    menu: 'https://static.thenounproject.com/png/659803-200.png',
     visible: true,
     white: 'white',
     black: 'black',

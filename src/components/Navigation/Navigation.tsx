@@ -48,6 +48,7 @@ const Navigation = (args: NavigationProps) => {
         top: 0;
         left: 0;
         box-sizing: border-box;
+        border-bottom: 1px solid #E5E5E5;
 
         background: ${(props) => props.backgroundColor};
         padding: ${(props) => `0 ${props.paddingSide}vw`};
@@ -63,8 +64,8 @@ const Navigation = (args: NavigationProps) => {
         }
 
         .menuButton {
-            width: 2rem;
-            height: 2rem;
+            width: 1.25rem;
+            height: 1.25rem;
             align-self: center;
             appearance: none;
             outline: none;
@@ -104,7 +105,9 @@ const Navigation = (args: NavigationProps) => {
                     border: none;
                     background: none;  
                     cursor: pointer;
-                    color: ${(props) => lighten(0.2, props.black)}
+                    color: ${(props) => lighten(0.2, props.black)};
+                    height: 100%;
+                    width: 100%;
                 }
             }
 

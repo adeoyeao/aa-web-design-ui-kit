@@ -15,8 +15,8 @@ export default {
 
 const Template:Story<ButtonProps> = (args) => <Button {...args} />
 
-export const Primary = Template.bind({});
-Primary.args = {
+export const CTA = Template.bind({});
+CTA.args = {
     primary: true,
     backgroundColor: 'blue',
     accentColor: 'orange',
