@@ -19,6 +19,7 @@ export type NavigationProps = {
 export type NavigationLinks = {
     name: string,
     route: string,
+    onClick: (route: string) => void;
 }
 
 const Navigation = (args: NavigationProps) => {
@@ -182,7 +183,10 @@ const Navigation = (args: NavigationProps) => {
                 {args.links.map(link => (
                     <li className={activeLink === link.route ? `active` : `inactive`}>
                         <button
-                        onClick={() => handleClick(link.route)}
+                        onClick={() => { 
+                            handleClick(link.route)
+                            link.onClick(link.route)
+                        }}
                         >{link.name}</button>
                     </li>
                 )) }
