@@ -1,6 +1,6 @@
 {
   "name": "aa-web-design-ui-kit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "src/index.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
