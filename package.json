@@ -18,10 +18,8 @@
   },
   "homepage": "https://adeoyeao.github.io/aa-web-design-ui-kit/",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "tsc -p",
+    "watch:build": "tsc --watch",
     "deploy-storybook": "storybook-to-ghpages",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
